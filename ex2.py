@@ -44,7 +44,6 @@ prices = soup.find_all('td', attrs={'class':"price"})
 total_price = 0
 for price in prices:
   total_price += int(price.text)
-print(prices, total_price)
 
 result = total_price/len(prices)
 
